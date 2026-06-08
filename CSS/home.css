@@ -72,7 +72,7 @@
 }
 
 .btn{
-    background: #E63946;
+    background: #FF1744;
     color:#FFFFFF;
     text-decoration: none;
     padding:16px;
@@ -194,7 +194,7 @@
 /*CTA Section*/
 
 .cta{
-    background: #E63946;
+    background: #FF1744;
     padding: 60px 5%;
     display: flex;
     justify-content: space-between;
