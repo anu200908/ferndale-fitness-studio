@@ -69,7 +69,7 @@
 }
 
 .btn{
-    background: #FF1744;
+    background: #D50000;
     color:#FFFFFF;
     text-decoration: none;
     padding:16px;
@@ -254,7 +254,7 @@
 }
 
 .carousel-btn:hover{
-    background:#FF1744;
+    background:#D50000;
 }
 
 .prev{
