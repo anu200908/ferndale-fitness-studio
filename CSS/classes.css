@@ -1,0 +1,375 @@
+/* Hero Section */
+
+.classes-hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items: center;
+
+    padding: 170px 5% 80px;
+
+
+    background:
+
+        linear-gradient(
+            to right,
+            rgba(31,31,31,.95) 0%,
+            rgba(31,31,31,.85) 30%,
+            rgba(31,31,31,.55) 60%,
+            rgba(31,31,31,.25) 100%
+        ),
+        url("../Images/classes.webp");
+
+    background-size:cover;
+    background-position:center;
+    
+}
+
+.classes-hero-content{
+    max-width: 700px;
+}
+
+.classes-hero h1{
+    font-family: 'Norwester';
+    font-size: 3rem;
+    line-height: .9;
+    margin-bottom: 30px;
+}
+
+.classes-hero h1 span{
+    color: #FF6B00;
+}
+
+.classes-hero p{
+    font-size:1.3rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/*Booking Section*/
+
+.schedule-container{
+    scroll-margin-top: 140px;
+    padding: 80px 5%;
+}
+
+
+
+/*Content Area*/
+
+.schedule-section{
+    padding: 80px 5%;
+}
+
+.timetable-controls{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#classSelect{
+    background: #2A2A2A;
+    color: #FFFFFF;
+    border: none;
+    padding:15px 20px;
+    border-radius: 8px;
+    min-width: 10px;
+    font-size: 1rem;
+}
+
+.day-selector{
+    display:grid;
+    flex-wrap: wrap;
+    gap:40px ;
+}
+
+.day-btn{
+    background: #2A2A2A;
+    color: #FFFFFF;
+    border:none;
+    padding: 12px 22px;
+    border-radius: 12px;
+    cursor:pointer;
+    transition:.3s;
+    font-size: 15px;
+}
+
+.day-btn:hover{
+    background: #FF6B00;
+}
+
+.day-btn.active{
+    background: #E63946;
+}
+
+.timetable-heading{
+    font-family: 'Norwester';
+    font-size: 3rem;
+    color: #FF6B00;
+    margin-bottom: 40px;
+}
+
+.book-btn{
+    background: #E63946;
+    color: #FFFFFF;
+    border-radius:8px;
+    border: none;
+    padding:14px 24px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.book-btn:hover{
+    background: #FF6B00;
+}
+
+#filterMessage{
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/*Table*/
+
+.table-wrapper{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #2A2A2A;
+    border-radius: 10px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+thead{
+    background: #E63946;
+}
+
+thead th{
+    padding: 20px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+thead th:last-child,
+tbody td:last-child{
+    width: 180px;
+    text-align: center;
+}
+
+tbody td{
+    padding: 20px;
+    border-bottom: 1px solid #444;
+}
+
+tbody tr:hover{
+    background: #333;
+}
+
+/*Booking Form*/
+
+.booking-form-section{
+    padding: 80px 5%;
+}
+
+.booking-form-section .form-container{
+    max-width: 800px;
+    margin:auto;
+    background: #1F1F1F;
+    padding: 40px;
+    border-radius:20px;
+}
+
+.booking-form-section h2{
+    font-family: 'Norwester';
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.booking-form-section h2 span{
+    color: #FF6B00;
+}
+
+.booking-form-section p{
+    margin-bottom: 30px;
+    color: #DDDDDD;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label{
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    background: #2A2A2A;
+    color: #FFFFFF;
+
+    padding: 15px;
+    border-radius: 10px;
+
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color: #FF6B00;
+}
+
+textarea{
+    resize:vertical;
+}
+
+#bookingSuccess{
+    display: none;
+    margin-top:25px;
+    padding: 15px;
+    border-radius: 10px;
+
+    background: #2E7D32;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.btn{
+    background:#E63946;
+    color: #FFFFFF;
+    text-decoration:none;
+    padding:16px 24px;
+    border-radius:30px;
+    font-weight:700;
+    text-transform:uppercase;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#FF6B00;
+}
+
+.btn-outline{
+    border:2px solid #FF6B00;
+
+    text-decoration:none;
+    padding:16px 24px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+    text-transform: uppercase;
+}
+
+.btn-outline:hover{
+    background:#FF6B00;
+}
+
+.booking-form-section{
+    padding: 25px;
+}
+
+.booking-form-section h2{
+    font-size: 2rem;
+}
+
+/*CTA Section*/
+
+.cta{
+    background: #E63946;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta h2{
+    font-family: 'Norwester';
+    font-size: 2.5rem;
+}
+
+.cta p{
+    margin-top: 10px;
+}
+
+.cta .btn{
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #1F1F1F;
+}
+
+.cta .btn:hover{
+    background: #FF6B00;
+    
+}
+
+/*Mobile*/
+
+@media(max-width:900px){
+
+    .classes-hero-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+    }
+
+    .classes-hero h1{
+        font-size: 3rem;
+    }
+
+    .schedule-container{
+        grid-template-columns: 1fr;
+    }
+
+    .day-selector {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .timetable-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #classSelect {
+        width: 100%;
+    }
+
+    table{
+        min-width: 700px;
+    }
+
+    .cta{
+        flex-direction: column;
+        text-align: center;
+        gap:20px;
+    }
+
+     .booking-form-section{
+        padding: 25px;
+    }
+
+    .booking-form-section h2{
+        font-size: 2rem;
+    }
+
+}

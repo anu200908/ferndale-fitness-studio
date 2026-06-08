@@ -1,0 +1,279 @@
+/*HERO*/
+
+.pricing-hero {
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+
+    padding: 170px 5% 80px;
+
+
+    background:
+
+        linear-gradient(
+            to right,
+            rgba(31,31,31,.95) 0%,
+            rgba(31,31,31,.85) 30%,
+            rgba(31,31,31,.55) 60%,
+            rgba(31,31,31,.25) 100%
+        ),
+        url("../Images/pricing.webp");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero-left h1 {
+    font-family: 'Norwester';
+    font-size: 3rem;
+    line-height:.9;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero-left h1 span {
+    color: #FF6B00;
+}
+
+.hero-left p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*MEMBERSHIP SECTION*/
+
+.membership {
+    padding: 80px 5%;
+    background: #1D2A44;
+    text-align: center;
+}
+
+.membership h2 {
+    font-family: 'Norwester', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.membership-card {
+    background: #253450;
+    border-radius: 16px;
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    position: relative;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.membership-card:hover {
+    border: 2px solid #FF6B00;
+    transform: translateY(-4px);
+}
+
+.membership-card.featured {
+    border: 2px solid #FF6B00;
+    background: #1F1F1F;
+}
+
+.badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF6B00;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.card-header h3 {
+    font-family: 'Norwester', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.price .amount {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #FF6B00;
+}
+
+.price .period {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+.features-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.features-list li {
+    font-size: 0.95rem;
+    color: #dddddd;
+}
+
+.features-list li.muted {
+    color: #666666;
+}
+
+.card-note {
+    font-size: 0.78rem;
+    color: #888888;
+    line-height: 1.4;
+}
+
+.membership-card .btn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* FAQ SECTION */
+
+.faq-section {
+    padding: 80px 5%;
+    background: #1F1F1F;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-family: 'Norwester', sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #253450;
+    border-radius: 12px;
+    padding: 28px 24px;
+    border-left: 4px solid #FF6B00;
+}
+
+.faq-item h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.faq-item p {
+    font-size: 0.92rem;
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+/*CTA */
+
+.cta{
+    background: #E63946;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta h2{
+    font-family: 'Norwester';
+    font-size: 2.5rem;
+}
+
+.cta p{
+    margin-top: 10px;
+}
+
+.cta .btn{
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #1F1F1F;
+}
+
+.cta .btn:hover{
+    background: #FF6B00;
+    
+}
+
+/* MOBILE*/
+
+@media (max-width: 900px) {
+
+    .pricing-hero {
+        padding: 120px 5% 60px;
+       
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-left p {
+        margin: 0 auto 32px;
+    }
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta{
+        flex-direction: column;
+        text-align: center;
+        gap:20px;
+    }
+
+}

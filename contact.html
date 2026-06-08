@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferndale Fitness Studio</title>
+
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+
+        <div class="logo">
+
+            Ferndale <br>
+            <span>Fitness
+            Studio</span>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+           ☰ 
+        </button>
+
+        <div class="overlay" id="overlay"></div>
+
+        <nav id="mobileNav">
+
+            <a href="index.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+        <a href="pricing.html" class="join-btn"> 
+            Join Now
+        </a>
+
+    </header>
+
+    <!--Hero Section-->
+
+    <section class="hero contact-hero">
+
+        <div class="hero-content">
+
+            <div class="hero-left">
+
+                <h1> 
+                    Find Us <br>Start your <br>
+                    <span>Journey</span>
+
+                </h1>
+
+                <p>
+                    Visit Ferndale Fitness Studio and experience expert coaching, modern 
+                    facilities and a supportive fitness community.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contactForm" class="btn">
+                        Get In Touch
+                    </a>
+
+                    <a href="#mapSection" class="btn-outline">
+                        View Location
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--Location-->
+
+    <section class="location-section">
+
+        <div class="location-content">
+
+            <div class="contact-card">
+
+                <h2> Visit Our <span> Studio</span> </h2>
+
+                <div class="contact-item">
+                    <strong>Address:</strong>
+                    <p>1 Example Road, Weymouth, Dorset</p>
+                </div>
+
+                <div class="contact-item">
+                    <strong> Phone:</strong>
+                    <p>01234 567 890</p>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <p>example@ferndalefitness.co.uk</p>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Opening Hours:</strong>
+                    <p> 
+                        Monday - Friday: 06:30am - 21:00pm<br>
+                        Saturday: 08:00am - 14:00pm<br>
+                        Sunday: CLOSED
+                    </p>
+                </div>
+                     
+            </div>
+
+            <div class="location-map">
+
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15946.543726130194!2d-2.465510889563478!3d50.61199099823702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1780777411273!5m2!1sen!2suk" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Contact Form-->
+
+    <section class="contact-form-section" id="contactForm">
+
+        <div class="form-container">
+
+            <h2>
+                Get In <span>Touch</span>
+
+            </h2>
+
+            <p> Have a question? We'd love to hear from you.</p>
+
+            <form id="contactFormElement">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input 
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number">
+                        
+                </div>
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <select id="subject" name="subject">
+
+                        <option value="">
+                            Select an enquiry type
+                        </option>
+
+                        <option value="membership">
+                            Membership
+                        </option>
+
+                        <option value="classes">
+                            Classes
+                        </option>
+
+                        <option value="personal Training">
+                            Personal Training
+                        </option>
+
+                        <option value="general">
+                            General Enquiry
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea 
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+            <div id="successMessage">
+                Thank you! Your enquiry has been submitted.
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--CTA-->
+
+    <section class="cta">
+
+        <div>
+
+            <h2>Curious About Our Trainers?</h2>
+
+            <p>Check out our trainers to see what they look like and learn more about them!</p>
+
+        </div>
+
+         <a href="classes.html" class="btn">Explore Trainers</a>
+        
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+
+        <div class="footer-logo">
+            
+            Ferndale<br> <span>Fitness Studio</span>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="privacy.html">Privacy Policy</a>
+
+            <a href="#">Facebook</a>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">TikTok</a>
+
+        </div>
+
+        <p> © 2026 Ferndale Fitness Studio </p>
+
+    </footer>   
+
+    <!--cookie banner-->
+
+    <div id="cookieBanner" class="cookie-banner">
+
+        <p>
+            We use cookies to improve your experience on our website.
+            By continuing to browse, you agree to our use of <a href="cookie.html">cookie policy</a>.
+        </p>
+
+        <button id="acceptCookies" class="cookie-btn">
+            Accept
+        </button>
+
+    </div>
+
+    <script src="JavaScript/contact.js"></script>
+
+</body>
+
+</html>

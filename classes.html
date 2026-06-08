@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes | Ferndale Fitness Studio</title>
+
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/classes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+
+        <div class="logo">
+
+            Ferndale <br>
+            <span>Fitness
+            Studio</span>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+           ☰ 
+        </button>
+
+        <div class="overlay" id="overlay"></div>
+
+        <nav id="mobileNav">
+
+            <a href="index.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+        <a href="pricing.html" class="join-btn"> 
+            Join Now
+        </a>
+
+    </header>
+
+    <!--Hero section--> 
+
+    <section class="hero classes-hero">
+
+        <div class="hero-content">
+
+            <div class="hero-left">
+
+                <h1>
+
+                    STRONGER<br>
+                    TOGETHER<br>
+                    <span>BETTER<br> EVERY DAY</span>
+
+                </h1>
+
+                <p>From high-intensity training to strength and mobility, our classes are designed to challenge and transform you.</p>
+
+                <div class= "hero-buttons">
+
+                    <a href="#bookingForm"class="btn">
+                    Book a Class
+                    </a>
+
+                    <a href="#scheduleTitle"class="btn-outline">
+                    View Timetable
+                    </a>
+
+                </div>
+
+            </div>    
+
+        </div>
+
+    </section>
+
+    <!--Timetable Section-->
+
+    <section class="schedule-container"id="scheduleTitle">
+
+        <h2 class="timetable-heading">
+            Weekly Timetable
+        </h2>
+
+        <div class="timetable-controls">
+
+            <select id="classSelect">
+
+                <option value="all">
+                    Select Classes
+                </option>
+
+                <option value="Strength">
+                    Strength
+                </option>
+
+                <option value ="HIIT">
+                    HIIT
+                </option>
+
+                <option value="Yoga">
+                    Yoga
+                </option>
+
+                <option value="Mobility">
+                    Mobility
+                </option>
+
+            </select>
+
+            <div class="day-selector">
+
+                <button class="day-btn active" data-day="All">All</button>
+                <button class="day-btn " data-day="Mon">Monday</button>
+                <button class="day-btn" data-day="Tue">Tuesday</button>
+                <button class="day-btn" data-day="Wed">Wednesday</button>
+                <button class="day-btn" data-day="Thu">Thursday</button>
+                <button class="day-btn" data-day="Fri">Friday</button>
+                <button class="day-btn" data-day="Sat">Saturday</button>
+            
+
+            </div>
+
+        </div>
+
+        <p id="filterMessage">
+            Showing all classes.
+        </p>
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Class</th>
+                        <th>Trainer</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="timetableBody"> 
+
+                   
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>    
+
+    <!--Booking Form Section-->
+
+    <section class="booking-form-section" id="bookingForm">
+
+        <div class="form-container">
+
+            <h2>
+                Book A <span>Class</span>
+
+            </h2>
+
+            <p> Reserve your place in one of our fitness classes.</p>
+
+            <form id="BookingFormElement">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input 
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number">
+                        
+                </div>
+
+                <div class="form-group">
+
+                    <label for="selectedClass">
+                        Select Class
+                    </label>
+
+                    <select id="selectedClass">
+
+                        <option value="">
+                            Choose a class
+                        </option>
+
+                        <option value="Strength">
+                            Strength
+                        </option>
+
+                        <option value="HIIT">
+                            HIIT
+                        </option>
+
+                        <option value="Yoga">
+                            Yoga
+                        </option>
+
+                        <option value="Mobility">
+                            Mobility
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="classDate">
+                        Class Date
+                    </label>
+
+                    <input 
+                        type="date"
+                        id="classDate"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Additional Information
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="4"
+                        placeholder="Optional notes..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Book Class
+                </button>
+
+            </form>
+
+            <div id="bookingSuccess">
+                Thank you! Your class booking request has been submitted.
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+
+    <section class="cta">
+
+        <div>
+
+            <h2>Curious About Our Trainers?</h2>
+
+            <p>Check out our trainers to see what they look like and learn more about them!</p>
+
+        </div>
+
+         <a href="classes.html" class="btn">Explore Trainers</a>
+        
+
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+
+        <div class="footer-logo">
+            
+            Ferndale<br> <span>Fitness Studio</span>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="privacy.html">Privacy Policy</a>
+
+            <a href="#">Facebook</a>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">TikTok</a>
+
+        </div>
+
+        <p> © 2026 Ferndale Fitness Studio </p>
+
+    </footer>   
+
+    <!--cookie banner-->
+
+    <div id="cookieBanner" class="cookie-banner">
+
+        <p>
+            We use cookies to improve your experience on our website.
+            By continuing to browse, you agree to our use of <a href="cookie.html">cookie policy</a>.
+        </p>
+
+        <button id="acceptCookies" class="cookie-btn">
+            Accept
+        </button>
+
+    </div>
+
+    <script src="JavaScript/classes.js"></script>
+
+</body>
+
+</html>
