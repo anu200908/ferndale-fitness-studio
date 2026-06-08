@@ -70,7 +70,7 @@ nav a.active{
 }
 
 .join-btn{
-    background:#E63946;
+    background:#FF1744;
     color:#FFFFFF;
     padding:14px 28px;
     border-radius:8px;
@@ -86,7 +86,7 @@ nav a.active{
 /*BUTTONS*/
 
 .btn{
-    background:#E63946;
+    background:#FF1744;
     color:#FFFFFF;
     text-decoration:none;
     padding:16px 24px;
@@ -153,7 +153,7 @@ footer{
 }
 
 .footer-links a:hover{
-    color:#E63946;
+    color:#FF1744;
 }
 
 
@@ -215,7 +215,7 @@ footer{
 }
 
 .cookie-btn {
-    background: #E63946;
+    background: #FF1744;
     color: #FFFFFF;
     border: none;
     padding: 12px 24px;
@@ -245,7 +245,7 @@ footer{
 }
 
 .cookie-banner a:hover {
-    color: #E63946;
+    color: #FF1744;
 }
 
 /* MOBILE */
