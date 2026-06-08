@@ -107,7 +107,7 @@
 }
 
 .day-btn.active{
-    background: #FF1744;
+    background: #D50000;
 }
 
 .timetable-heading{
@@ -118,7 +118,7 @@
 }
 
 .book-btn{
-    background: #FF1744;
+    background: #D50000;
     color: #FFFFFF;
     border-radius:8px;
     border: none;
@@ -152,7 +152,7 @@ table{
 }
 
 thead{
-    background: #FF1744;
+    background: #D50000;
 }
 
 thead th{
@@ -253,7 +253,7 @@ textarea{
 }
 
 .btn{
-    background:#FF1744;
+    background:#D50000;
     color: #FFFFFF;
     text-decoration:none;
     padding:16px 24px;
