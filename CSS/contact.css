@@ -255,12 +255,6 @@ textarea{
     margin-top: 10px;
 }
 
-.cta .btn{
-    background: transparent;
-    color: #FFFFFF;
-    border: 2px solid #1F1F1F;
-}
-
 .cta .btn:hover{
     background: #FF6B00;
     
